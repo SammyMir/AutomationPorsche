@@ -10,11 +10,11 @@ import org.junit.runner.RunWith;
         glue="step_def",
         dryRun=false,
         monochrome=true,
-        tags="@data",
+        //tags="@data",
         plugin = { "pretty", "json:target/cucumber-reports/CucumberReport.json",
                 "junit:target/cucumber-reports/CucumberReport.xml",
                 "html:target/cucumber-reports/CucumberReport.html",
-                "rerun:target"}
+                "rerun:target/rerun.txt"}
 )
 
 

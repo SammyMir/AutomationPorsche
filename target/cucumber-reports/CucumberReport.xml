@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="12.57">
+<testcase classname="Home Page Functionalities" name="Validating Logo" time="9.939">
+<system-out><![CDATA[Given user launches application.............................................passed
+Given user launches application.............................................passed
+When user lands in home page and validate title "My Store"..................passed
+Then user should see my store logo..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Home Page Functionalities" name="Search Item" time="2.288">
+<system-out><![CDATA[Given user launches application.............................................passed
+And user enters product "blouse"............................................passed
+When user clicks search icon................................................passed
+Then item "blouse" is displayed.............................................passed
+]]></system-out>
+</testcase>
+</testsuite>

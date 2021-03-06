@@ -1,0 +1,172 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Common step for all steps",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7964000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user launches application",
+            "match": {
+              "location": "step_def.HomePageSteps.user_launches_application()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-06T00:26:27.798Z",
+        "line": 7,
+        "name": "Validating Logo",
+        "description": "",
+        "id": "home-page-functionalities;validating-logo",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1674000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user launches application",
+            "match": {
+              "location": "step_def.HomePageSteps.user_launches_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 35000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user lands in home page and validate title \"My Store\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"My Store\"",
+                  "offset": 43
+                }
+              ],
+              "location": "step_def.HomePageSteps.user_lands_in_home_page_and_validate_title(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 110000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user should see my store logo",
+            "match": {
+              "location": "step_def.HomePageSteps.user_should_see_my_store_logo()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@titletest"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Common step for all steps",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 930000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user launches application",
+            "match": {
+              "location": "step_def.HomePageSteps.user_launches_application()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-06T00:26:37.765Z",
+        "line": 13,
+        "name": "Search Item",
+        "description": "",
+        "id": "home-page-functionalities;search-item",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 205000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user enters product \"blouse\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"blouse\"",
+                  "offset": 20
+                }
+              ],
+              "location": "step_def.HomePageSteps.user_enters_product(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1068000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user clicks search icon",
+            "match": {
+              "location": "step_def.HomePageSteps.user_clicks_search_icon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 78000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "item \"blouse\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"blouse\"",
+                  "offset": 5
+                }
+              ],
+              "location": "step_def.HomePageSteps.item_is_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Home Page Functionalities",
+    "description": "",
+    "id": "home-page-functionalities",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/HomePage.feature",
+    "tags": []
+  }
+]
