@@ -7,6 +7,7 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
+import pages.AccountPage;
 import pages.HomePage;
 import utilities.ConfigReader;
 import utilities.Driver;
@@ -19,6 +20,9 @@ public class HomePageSteps {
     HomePage hp = new HomePage();
  Faker fk=new Faker();
  Random rd=new Random();
+ String email;
+ String password;
+ AccountPage ac=new AccountPage();
 
     @Given("user launches application")
     public void user_launches_application() {
@@ -118,7 +122,7 @@ public class HomePageSteps {
     }
     @Then("user enters valid email")
     public void user_enters_valid_email() {
-        String email=fk.name().firstName()+"@gmail.com";
+        email=fk.name().firstName()+"@gmail.com";
         hp.enterEmail.sendKeys(email);
 
     }
@@ -135,9 +139,10 @@ public class HomePageSteps {
     }
     @Then("user enters  firstname lastname and password")
     public void user_enters_firstname_lastname_and_password() {
+
         String fname=fk.name().firstName();
         String lname=fk.name().lastName();
-        String password=fname.toUpperCase()+lname+rd.nextInt(9999)+"@@@";
+        password=fname.toUpperCase()+lname+rd.nextInt(9999)+"@@@";
         hp.firstname.sendKeys(fname);
         hp.lastname.sendKeys(lname);
         hp.password.sendKeys(password);
@@ -185,5 +190,25 @@ public class HomePageSteps {
             hp.registerButton.click();
 
     }
+    @When("user enters valid email and password")
+    public void user_enters_valid_email_and_password() {
+        hp.emailEntering.sendKeys("Belva@gmail.com");
+        hp.passwordEntering.sendKeys("CLIFTONDare5723@@@");
+    }
+
+    @When("user clicks submit button")
+    public void user_clicks_submit_button() {
+        hp.submitButton.click();
+
+    }
+    @Then("user is on the AccountPage")
+    public void user_is_on_the_account_page() {
+        String actualFullName=ac.userInfo.getText();
+        String expectedFullName="Clifton Dare";
+        Assert.assertEquals(actualFullName, expectedFullName);
+
+
+    }
+
 }
 

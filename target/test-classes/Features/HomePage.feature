@@ -41,6 +41,15 @@ Background: Common step for all steps
     And user enters valid company name
     And user enters address city
     And user enters address city
-    And  user selects state and enters zipcode
-    And  user enters mobile phone
-    And  user click register button
+    And user selects state and enters zipcode
+    And user enters mobile phone
+    And user click register button
+    And user is on the AccountPage
+
+  @signin
+  Scenario: Existing user should be able to sign in
+    When user clicks sign in button
+    And user enters valid email and password
+    And user clicks submit button
+    Then user is on the AccountPage
+

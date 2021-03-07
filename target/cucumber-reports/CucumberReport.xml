@@ -1,47 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="1.856">
-<testcase classname="Home Page Functionalities" name="Validating Logo" time="0.552">
-<system-out><![CDATA[Given user launches application.............................................passed
-Given user launches application.............................................passed
-When user lands in home page and validate title "My Store"..................passed
-Then user should see my store logo..........................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Home Page Functionalities" name="Search Item" time="0.015">
-<system-out><![CDATA[Given user launches application.............................................passed
-And user enters product "blouse"............................................passed
-When user clicks search icon................................................passed
-Then item "blouse" is displayed.............................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Home Page Functionalities" name="Contact Us Functionality" time="0.084">
-<system-out><![CDATA[Given user launches application.............................................passed
-And user clicks contact us button...........................................passed
-And user validates "CUSTOMER SERVICE - CONTACT US" is displayed.............passed
-And user chooses the subject heading "Customer service".....................passed
-And user enters email address...............................................passed
-And user enters order reference.............................................passed
-And user attaches file......................................................passed
-And user inputs message.....................................................passed
-And user clicks send button.................................................passed
-Then success message "Your message has been successfully sent to our team." should be displayed.passed
-]]></system-out>
-</testcase>
-<testcase classname="Home Page Functionalities" name="Creating New User" time="0.024">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="10.737">
+<testcase classname="Home Page Functionalities" name="Existing user should be able to sign in" time="10.326">
 <system-out><![CDATA[Given user launches application.............................................passed
 When user clicks sign in button.............................................passed
-Then user should see create user section....................................passed
-And user enters valid email.................................................passed
-And clicks create button....................................................passed
-And user clicks title.......................................................passed
-And user enters  firstname lastname and password............................passed
-And user selects date of birth..............................................passed
-And user enters valid company name..........................................passed
-And user enters address city................................................passed
-And user enters address city................................................passed
-And user selects state and enters zipcode...................................passed
-And user enters mobile phone................................................passed
-And user click register button..............................................passed
+And user enters valid email and password....................................passed
+And user clicks submit button...............................................passed
+Then user is on the AccountPage.............................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

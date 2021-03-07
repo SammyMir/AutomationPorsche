@@ -85,4 +85,16 @@ public class HomePage {
     public WebElement enterEmail;
     @FindBy(xpath="//button[@id='SubmitCreate']")
     public WebElement enterButton;
+
+    @FindBy(id="email")
+    public WebElement emailEntering;
+
+    @FindBy(id="passwd")
+    public WebElement passwordEntering;
+
+    @FindBy(xpath="//*[@id=\"SubmitLogin\"]/span")
+    public WebElement submitButton;
+
+
+
 }
