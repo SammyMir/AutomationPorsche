@@ -107,7 +107,7 @@ public class HomePageSteps {
         Assert.assertEquals(message,actualMessage);
 
     }
-////---------------------------------------------------------------------
+
     @When("user clicks sign in button")
     public void user_clicks_sign_in_button() {
     hp.signIn.click();
@@ -129,7 +129,7 @@ public class HomePageSteps {
     @Then("clicks create button")
     public void clicks_create_button() throws InterruptedException {
         hp.enterButton.click();
-        Thread.sleep(10000);
+        Thread.sleep(6000);
 
     }
     @Then("user clicks title")
@@ -209,6 +209,12 @@ public class HomePageSteps {
 
 
     }
+
+    @Then("user closes the application")
+    public void user_closes_the_application() {
+        Driver.closeDriver();
+    }
+
 
 }
 

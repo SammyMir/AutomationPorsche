@@ -5,17 +5,15 @@ Background: Common step for all steps
 
   @titletest
   Scenario: Validating Logo
-
-    Given  user launches application
     When   user lands in home page and validate title "My Store"
     Then   user should see my store logo
 
   Scenario: Search Item
-
-
     And   user enters product "blouse"
     When  user clicks search icon
     Then  item "blouse" is displayed
+    Then user closes the application
+
 
     @contact
     Scenario: Contact Us Functionality
@@ -28,6 +26,8 @@ Background: Common step for all steps
       And user inputs message
       And user clicks send button
       Then success message "Your message has been successfully sent to our team." should be displayed
+      Then user closes the application
+
 
 @account
   Scenario: Creating New User
@@ -45,6 +45,7 @@ Background: Common step for all steps
     And user enters mobile phone
     And user click register button
     And user is on the AccountPage
+  Then user closes the application
 
   @signin
   Scenario: Existing user should be able to sign in
@@ -52,4 +53,5 @@ Background: Common step for all steps
     And user enters valid email and password
     And user clicks submit button
     Then user is on the AccountPage
+    Then user closes the application
 

@@ -1,43 +1,34 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "line": 3,
-        "name": "Common step for all steps",
+        "start_timestamp": "2021-03-12T04:05:56.273Z",
+        "line": 5,
+        "name": "Summer  Dress Selection",
         "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 5984000000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "user launches application",
-            "match": {
-              "location": "step_def.HomePageSteps.user_launches_application()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-03-07T01:49:43.609Z",
-        "line": 50,
-        "name": "Existing user should be able to sign in",
-        "description": "",
-        "id": "home-page-functionalities;existing-user-should-be-able-to-sign-in",
+        "id": "account-page-features;summer--dress-selection",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 1948000000,
+              "duration": 8819000000,
               "status": "passed"
             },
-            "line": 51,
+            "line": 18,
+            "name": "user launches application",
+            "match": {
+              "location": "step_def.HomePageSteps.user_launches_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2007000000,
+              "status": "passed"
+            },
+            "line": 19,
             "name": "user clicks sign in button",
             "match": {
               "location": "step_def.HomePageSteps.user_clicks_sign_in_button()"
@@ -46,10 +37,10 @@
           },
           {
             "result": {
-              "duration": 375000000,
+              "duration": 544000000,
               "status": "passed"
             },
-            "line": 52,
+            "line": 20,
             "name": "user enters valid email and password",
             "match": {
               "location": "step_def.HomePageSteps.user_enters_valid_email_and_password()"
@@ -58,10 +49,10 @@
           },
           {
             "result": {
-              "duration": 1728000000,
+              "duration": 2180000000,
               "status": "passed"
             },
-            "line": 53,
+            "line": 21,
             "name": "user clicks submit button",
             "match": {
               "location": "step_def.HomePageSteps.user_clicks_submit_button()"
@@ -70,29 +61,534 @@
           },
           {
             "result": {
-              "duration": 44000000,
+              "duration": 259000000,
               "status": "passed"
             },
-            "line": 54,
-            "name": "user is on the AccountPage",
+            "line": 22,
+            "name": "user moves cursor to DRESSES bar",
             "match": {
-              "location": "step_def.HomePageSteps.user_is_on_the_account_page()"
+              "location": "step_def.PurchasePageSteps.user_moves_cursor_to_dresses_bar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2421000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user clicks SUMMER DRESSES",
+            "match": {
+              "location": "step_def.PurchasePageSteps.user_clicks_summer_dresses()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2033000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user selects \"Printed Summer Dress\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Printed Summer Dress\"",
+                  "offset": 13
+                }
+              ],
+              "location": "step_def.PurchasePageSteps.user_selects(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 668000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user selects 2 dresses and \"S\" size and \"blue\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 13
+                },
+                {
+                  "val": "\"S\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"blue\"",
+                  "offset": 40
+                }
+              ],
+              "location": "step_def.PurchasePageSteps.user_selects_dresses_and_size_and(java.lang.Integer,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 159000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "user adds into card",
+            "match": {
+              "location": "step_def.PurchasePageSteps.user_adds_into_card()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1545000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user closes the application",
+            "match": {
+              "location": "step_def.HomePageSteps.user_closes_the_application()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@signin"
+            "name": "@ACCOUNT"
+          },
+          {
+            "name": "@dress"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-12T04:06:17.315Z",
+        "line": 31,
+        "name": "Buying the dresses",
+        "description": "",
+        "id": "account-page-features;buying-the-dresses",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9590000000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "user launches application",
+            "match": {
+              "location": "step_def.HomePageSteps.user_launches_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2568000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "user clicks sign in button",
+            "match": {
+              "location": "step_def.HomePageSteps.user_clicks_sign_in_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 515000000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "user enters valid email and password",
+            "match": {
+              "location": "step_def.HomePageSteps.user_enters_valid_email_and_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2174000000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "user clicks submit button",
+            "match": {
+              "location": "step_def.HomePageSteps.user_clicks_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 394000000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "user moves cursor to DRESSES bar",
+            "match": {
+              "location": "step_def.PurchasePageSteps.user_moves_cursor_to_dresses_bar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1575000000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "user clicks SUMMER DRESSES",
+            "match": {
+              "location": "step_def.PurchasePageSteps.user_clicks_summer_dresses()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1252000000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "user selects \"Printed Summer Dress\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Printed Summer Dress\"",
+                  "offset": 13
+                }
+              ],
+              "location": "step_def.PurchasePageSteps.user_selects(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 535000000,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "user selects 2 dresses and \"S\" size and \"blue\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 13
+                },
+                {
+                  "val": "\"S\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"blue\"",
+                  "offset": 40
+                }
+              ],
+              "location": "step_def.PurchasePageSteps.user_selects_dresses_and_size_and(java.lang.Integer,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 114000000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "user adds into card",
+            "match": {
+              "location": "step_def.PurchasePageSteps.user_adds_into_card()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7191000000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "user clicks proceed to checkout",
+            "match": {
+              "location": "step_def.ShoppingPageTest.user_clicks_proceed_to_checkout()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 95000000,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "user validates shopping cart page  \"Your shopping cart contains: 2 Products\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Your shopping cart contains: 2 Products\"",
+                  "offset": 35
+                }
+              ],
+              "location": "step_def.ShoppingPageTest.user_validates_shopping_cart_page(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 72000000,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "user validate dress name \"Printed Summer Dress\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Printed Summer Dress\"",
+                  "offset": 25
+                }
+              ],
+              "location": "step_def.ShoppingPageTest.user_validate_dress_name(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 189000000,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "user validates products price \"$57.96\" and shipping cost \"$2.00\" and total cost \"$59.96\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"$57.96\"",
+                  "offset": 30
+                },
+                {
+                  "val": "\"$2.00\"",
+                  "offset": 57
+                },
+                {
+                  "val": "\"$59.96\"",
+                  "offset": 80
+                }
+              ],
+              "location": "step_def.ShoppingPageTest.user_validates_products_price_and_shipping_cost_and_total_cost(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 14000000,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "user scrolls down to the bottom",
+            "match": {
+              "location": "step_def.ShoppingPageTest.user_scrolls_down_to_the_bottom()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1720000000,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "user clicks final checkout",
+            "match": {
+              "location": "step_def.ShoppingPageTest.user_clicks_final_checkout()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63000000,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "user is in Address section",
+            "match": {
+              "location": "step_def.ShoppingPageTest.user_is_in_address_section()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 579000000,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "user validates that delivery and billing address are the same",
+            "match": {
+              "location": "step_def.ShoppingPageTest.user_validates_that_delivery_and_billing_address_are_the_same()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1702000000,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "user clicks to go next section",
+            "match": {
+              "location": "step_def.ShoppingPageTest.user_clicks_to_go_next_section()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 70000000,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "user valiate shipping fee \"$2.00\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"$2.00\"",
+                  "offset": 26
+                }
+              ],
+              "location": "step_def.ShoppingPageTest.user_valiate_shipping_fee(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 145000000,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "user check terms and condito checkox",
+            "match": {
+              "location": "step_def.ShoppingPageTest.user_check_terms_and_condito_checkox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 999000000,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "user clicks proceed to checkbox for payment",
+            "match": {
+              "location": "step_def.ShoppingPageTest.user_clicks_proceed_to_checkbox_for_payment()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50000000,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "user should in payment method section",
+            "match": {
+              "location": "step_def.ShoppingPageTest.user_should_in_payment_method_section()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 104000000,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "user validated payment infomartion",
+            "match": {
+              "location": "step_def.ShoppingPageTest.user_validated_payment_infomartion()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 955000000,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "user click bank wire payment",
+            "match": {
+              "location": "step_def.ShoppingPageTest.user_click_bank_wire_payment()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 114000000,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "user is on bank wire payment section",
+            "match": {
+              "location": "step_def.ShoppingPageTest.user_is_on_bank_wire_payment_section()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2443000000,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "user click confirm button",
+            "match": {
+              "location": "step_def.ShoppingPageTest.user_click_confirm_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 119000000,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "user should see order confirmation \"Your order on My Store is complete.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Your order on My Store is complete.\"",
+                  "offset": 35
+                }
+              ],
+              "location": "step_def.ShoppingPageTest.user_should_see_order_confirmation(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1306000000,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "user closes the application",
+            "match": {
+              "location": "step_def.HomePageSteps.user_closes_the_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ACCOUNT"
+          },
+          {
+            "name": "@buyItem"
           }
         ]
       }
     ],
-    "name": "Home Page Functionalities",
+    "name": "Account Page Features",
     "description": "",
-    "id": "home-page-functionalities",
+    "id": "account-page-features",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/Features/HomePage.feature",
-    "tags": []
+    "uri": "file:src/test/resources/Features/AccountPage.feature",
+    "tags": [
+      {
+        "name": "@ACCOUNT",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]

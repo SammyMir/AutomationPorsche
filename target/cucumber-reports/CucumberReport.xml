@@ -1,11 +1,47 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="10.737">
-<testcase classname="Home Page Functionalities" name="Existing user should be able to sign in" time="10.326">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="58.562">
+<testcase classname="Account Page Features" name="Summer  Dress Selection" time="20.968">
 <system-out><![CDATA[Given user launches application.............................................passed
 When user clicks sign in button.............................................passed
 And user enters valid email and password....................................passed
 And user clicks submit button...............................................passed
-Then user is on the AccountPage.............................................passed
+And user moves cursor to DRESSES bar........................................passed
+And user clicks SUMMER DRESSES..............................................passed
+And user selects "Printed Summer Dress".....................................passed
+And user selects 2 dresses and "S" size and "blue"..........................passed
+And user adds into card.....................................................passed
+Then user closes the application............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Account Page Features" name="Buying the dresses" time="36.677">
+<system-out><![CDATA[Given user launches application.............................................passed
+When user clicks sign in button.............................................passed
+And user enters valid email and password....................................passed
+And user clicks submit button...............................................passed
+And user moves cursor to DRESSES bar........................................passed
+And user clicks SUMMER DRESSES..............................................passed
+And user selects "Printed Summer Dress".....................................passed
+And user selects 2 dresses and "S" size and "blue"..........................passed
+And user adds into card.....................................................passed
+And user clicks proceed to checkout.........................................passed
+And user validates shopping cart page  "Your shopping cart contains: 2 Products".passed
+And user validate dress name "Printed Summer Dress".........................passed
+Then user validates products price "$57.96" and shipping cost "$2.00" and total cost "$59.96".passed
+And user scrolls down to the bottom.........................................passed
+And user clicks final checkout..............................................passed
+And user is in Address section..............................................passed
+And user validates that delivery and billing address are the same...........passed
+And user clicks to go next section..........................................passed
+And user valiate shipping fee "$2.00".......................................passed
+And user check terms and condito checkox....................................passed
+And user clicks proceed to checkbox for payment.............................passed
+Then user should in payment method section..................................passed
+Then user validated payment infomartion.....................................passed
+And user click bank wire payment............................................passed
+And user is on bank wire payment section....................................passed
+And user click confirm button...............................................passed
+Then user should see order confirmation "Your order on My Store is complete.".passed
+Then user closes the application............................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

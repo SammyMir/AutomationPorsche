@@ -69,20 +69,28 @@ public class HomePage {
 
     @FindBy(name="city")
     public WebElement city;
+
     @FindBy(id="id_state")
     public WebElement state;
+
     @FindBy(id="postcode")
     public WebElement postcode;
+
     @FindBy(id="phone_mobile")
     public WebElement mobile;
+
     @FindBy(xpath="//button[@name='submitAccount']")
     public WebElement registerButton;
+
     @FindBy(xpath="//a[@class='login']")
     public  WebElement signIn;
+
     @FindBy(xpath="(//h3[@class='page-subheading'])[1]")
     public WebElement createAccountDisplayed;
+
     @FindBy (id="email_create")
     public WebElement enterEmail;
+
     @FindBy(xpath="//button[@id='SubmitCreate']")
     public WebElement enterButton;
 
